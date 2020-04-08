@@ -1,0 +1,380 @@
+@charset "UTF-8";
+/* CSS Document */
+header{
+	max-width: 1300px;
+	width: 100%;
+	min-height: 60px;
+	max-height: auto;
+	background-color: white;
+	margin:auto;
+	position: relative;
+	font-family: bodyfont;
+}
+
+.ptext{
+	padding: 10px;
+	text-align: center;
+	font-size: 40px;
+	font-family: bodyfont;
+}
+
+h1{
+	text-align: center;
+	padding-top: 20px;
+	font-family: headerfont;
+	font-size: 40px;
+}
+
+hr{
+	width: 50%;
+	height: 2px;
+	background-color: black;
+	position: relative;
+	bottom: 10px;
+}
+
+button{
+	margin-top:10px;
+	margin-left:20%;
+	margin-right:20%;
+	background-color: white;
+	text-decoration: none;
+	border:none;
+	border-radius: 2px;
+	font-size: 25px;
+	cursor: pointer;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	position: relative;
+	font-family: bodyfont;
+	
+}
+header a{
+	margin-left:20%;
+	margin-right:2%;
+	background-color: white;
+	text-decoration: none;
+	border:none;
+	border-radius: 2px;
+	font-size: 25px;
+	cursor: pointer;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	position: relative;
+	color: black;
+}
+
+.header-container h1{
+	padding-top: 1%;
+}
+button:hover, a:hover{
+	/**box-shadow: 0 3px 3px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);**/
+    background-color: rgba(181,226,228,0.5);
+}
+/*SLIDESHOW AND BODY CONTAINER*/
+@font-face{
+	font-family: bodyfont;
+	src:url("style/NixieOne/fonts/NixieOne.woff");
+}
+@font-face{
+	font-family: headerfont;
+	src:url("style/TamiraRegular/fonts/Tamira-lwA0.woff"); 
+	
+}
+
+div.container{
+	max-width: 1300px;
+	width: 83%;
+	min-height:650px;
+	height: 40%;
+	margin-top: 30px;
+	margin-left:100px;
+	margin-right: 100px;
+	position: relative;
+	align-self: center;
+	background-color: rgba(181,226,228,0.5);
+	font-size: 20px;
+}
+
+body{
+	background-color: whitesmoke;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+/*ABOUT CONTENT*/
+
+.wave{
+  background:whitesmoke;
+  height: 1px;
+ position: relative;
+}
+
+.wave::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat-x;
+  height: 10px;
+  background-size: 20px 20px;
+  background-image: radial-gradient(circle at 10px -5px, transparent 12px, white 13px);
+}
+.wave::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat-x;
+  height: 15px;
+  background-size: 40px 20px;
+  background-image: radial-gradient(circle at 10px 15px, white 12px, transparent 13px);
+}
+
+.about{
+	width:100%;
+	height: 40%;
+	background-color: white;
+	font-size: 30px;
+	text-align: center;
+	
+	}
+
+#aboutimg{
+	width: 40%;
+	height:auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: none;
+	padding-top: 15px;
+	
+}
+
+/*ORDER CONTAINER*/
+.order{
+	width:100%;
+	height: 40%;
+	background-color: whitesmoke;
+	font-size: 30px;
+	text-align: center;
+	}
+
+
+/* FOOTER CODE*/
+div.footer-container{
+	display: flex;
+	justify-content: center;
+	min-height:100px;
+	text-align: center;
+	background-color: #B5E2E4;
+	font-size: 20px;
+	font-family: bodyfont;
+	
+}
+
+.footer-container p {
+	display: flex;
+	justify-content: center;
+	flex: 1 1 0px;
+	
+}
+/*SOCIAL MEDIA BUTTONS*/
+.fa {
+	flex-basis: 100%;
+	font-size: 30px;
+	text-decoration: none;
+	margin: 10px;
+	max-width: 30px;
+	padding: 10px;
+	text-align: center;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+/* DROPDOWN CODE*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 20px;
+  background-color: white;
+  min-width: 1px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  margin: 8px 3px 8px 3px;
+  background-color: white;
+  padding: 8px 8px 3px 3px;
+  text-decoration: none;
+  display: block;
+  
+}
+
+.dropdown-content a:hover {background-color: #C3C3C3;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+/** SLIDESHOW CODE **/
+
+
+.numbertext{
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  background-color: rgba(181,226,228,0.20);
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-flex;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+	height: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 3px;
+
+}
+
+.MySlides{
+	display: none;
+}
+/*FORM CONTENT*/
+.formcontainer{
+	width:100%;
+	height:900px;
+	background-image: url("images/beccasweddingcake.jpg");
+	background-size: cover;
+	position: relative;
+	bottom: 5px;
+}
+
+.contactcontainer{
+	display: block;
+	margin-left: 25%;
+	margin-right: auto;
+	width: 50%;
+	position: absolute;
+	top: 220px;
+	background-color: rgba(237,209,134,0.77);
+	padding: 0 0 30px 0;
+	
+}
+input{
+	font-size: 20px;
+}
+#textarea{
+	max-width: 200px;
+	width:100%;
+	height: 60px;
+	position: relative;
+	top:10px;
+	resize: none;
+}
+
+
+
+
+
+/*MEDIA QUERIES*/
+
+@media only screen and (max-width: 1024px){
+}
+
+@media only screen and(max-width: 767px){}
+
+@media only screen and(max-width: 430px){}
+
+@media print{}

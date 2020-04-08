@@ -1,0 +1,11 @@
+@charset "UTF-8";
+/* CSS Document */
+body{
+	
+	background-color: whitesmoke;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
